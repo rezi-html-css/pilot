@@ -1,0 +1,88 @@
+body {
+  direction: rtl;
+}
+@font-face {
+  font-family: yekanBakhReg;
+  src: url(../fonts/Yekan_Bakh_Fanum_Regular.TTF);
+}
+.yekanReg {
+  font-family: yekanBakhReg;
+  font-size: 10px;
+}
+@font-face {
+  font-family: yekanBakhBold;
+  src: url(../fonts/Yekan_Bakh_Fanum_Bold.TTF);
+}
+.yekanBold {
+  font-family: yekanBakhBold;
+  font-size: 20px;
+}
+.imgCar {
+  transition: 2s;
+  width: 100px;
+  height: 100px;
+}
+.imgCar:hover {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  /* background-color: rgba(255, 0, 0, 0.01); */
+  box-shadow: 0 0 15px 10px rgba(255, 0, 0, 0.5),
+    inset 0 0 15px 10px rgba(255, 0, 0, 0.5);
+}
+.centerTextAlign {
+  border: 10px double red;
+  text-align: center;
+  background-color: rgba(251, 215, 140, 1);
+}
+.centerMargin {
+  /* تنها راه اینه که بلاکیش کنی و اندازه خود تصویرو بهش بدی که بزرگ نشه که بتونه دقیقا بره وسط */
+  border: 1px solid rgb(235, 56, 139);
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+.centerPosition {
+  border: 1px solid purple;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%; /*ندادم تغییر نکرد*/
+  transform: translate(-50%, -50%);
+}
+.centerFlex {
+  border: 1px solid lime;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.centerGrid {
+  border: 1px solid saddlebrown;
+  display: grid;
+  place-items: center;
+}
+a {
+  transition: 0.5s;
+  color: darkcyan;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+.centerMe {
+  display: flex;
+  justify-content: center;
+}
+.textDesign {
+  padding: 10px;
+  /* box-sizing: border-box; */
+  margin: 20px;
+  width: 20px;
+  height: 20px;
+  /* border-top: 30px solid red; */
+  border-bottom: 10px solid green;
+  /* border-right: 30px solid blue; */
+  border-left: 10px solid yellow;
+  border-radius: 100%;
+}
